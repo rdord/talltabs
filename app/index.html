@@ -1,0 +1,72 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>talltabs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div id="page-wrap">
+        
+             <div id="talltabs">
+                        
+                    <ul class="nav">
+                        <li><a href="#play" class="current">Play</a></li>
+                        <li><a href="#make">Make</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#empty">&nbsp;</a></li>
+                    </ul>
+                    
+                    <div class="list-wrap">
+                    
+                        <ul id="play">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia, illum mollitia.</p> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error rem, distinctio fugit hic deserunt et ipsum! Porro laborum provident culpa qui maxime labore fuga, totam, sed commodi, fugiat perspiciatis inventore.</p>
+                        </ul>
+                         
+                         <ul id="make" class="hide">
+                            <p>git clone https://github.com/rdorde/talltabs-clean.git</p>
+                            <pre>li a.current {
+    padding-bottom: 2em;
+}</pre>
+                         </ul>
+                         
+                         <ul id="about" class="hide">
+                            <p>Tool for previewing tall tabs.</p>
+                         </ul>
+                         
+                         <ul id="empty" class="hide"></ul>
+                         
+                </div>
+        </div>
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/jquery.organicTabs/src/jquery.organicTabs.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

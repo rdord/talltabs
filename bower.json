@@ -1,0 +1,10 @@
+{
+  "name": "talltabs",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0",
+    "normalize.css": "~3.0.1",
+    "jquery.organicTabs": "https://github.com/olance/jquery.organicTabs.git"
+  },
+  "devDependencies": {}
+}
