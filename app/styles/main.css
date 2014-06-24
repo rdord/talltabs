@@ -68,7 +68,6 @@ h1 {
 .list-wrap p {
     font-size: 14px;
     line-height: 2.2;
-    cursor: auto;
 }
 
 ul {
@@ -127,5 +126,5 @@ li a.current, li a.current:hover {
 }
 
 li a.current {
-    padding-bottom: 2em;
+    padding-bottom: 20px;
 }
