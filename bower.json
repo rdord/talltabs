@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "~1.11.0",
     "normalize.css": "~3.0.1",
-    "jquery.organicTabs": "https://github.com/olance/jquery.organicTabs.git"
+    "jquery.organicTabs": "https://github.com/olance/jquery.organicTabs.git",
+    "jquery-ui": "~1.10.4"
   },
   "devDependencies": {}
 }
