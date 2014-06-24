@@ -1,30 +1,35 @@
 'use strict';
 
 $(function() {
-    $('#talltabs').organicTabs({
-        fadingSpeed: 100,
-        sizingSpeed: 100
-    });
 
-    $('.list-wrap').draggable({
-			axis: 'y'
-		});
+	function handleKeys(e) {
+		var KEY_UP = 38,
+				KEY_DOWN = 40,
+				currentHeight = $('li a.current').css('height');
 
-	$('.list-wrap').bind('drag', function (event, ui) {
-				var gap = ui.position.top + 20;
+		switch (e.keyCode) {
+			case KEY_UP:
+				$('li a.current').css('height', currentHeight - 10);
+				break;
+			case KEY_DOWN:
+				$('li a.current').css('height', currentHeight + 10);
+				break;
+		}
+	}
 
-				if(gap < 10){
-					ui.position.top = -10;
-				}
-				
-				if(gap > 200){
-					ui.position.top = 180;
-				}
-/*
-				$('li a.current').css('padding-bottom', gap);
-*/
-			});
+	$('body').on('keypress', handleKeys);
 
+	$('#talltabs').organicTabs({
+		fadingSpeed: 100,
+		sizingSpeed: 100
+	});
 
+	$('li a.current').resizable({
+		handles: 's',
+		minWidth: 97,
+		maxWidth: 97,
+		minHeight: 1,
+		maxHeight: 200
+	});
 });
 
