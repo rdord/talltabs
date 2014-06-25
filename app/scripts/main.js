@@ -15,5 +15,13 @@ $(function() {
 			}
 		});
 
+	$('li a').resizable({
+		handles: 's',
+		minWidth: 97,
+		maxWidth: 97,
+		minHeight: 1,
+		maxHeight: 200
+	});
+
 });
 
