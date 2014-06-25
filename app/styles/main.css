@@ -131,3 +131,18 @@ li a.current, li a.current:hover {
 li a.current {
     height: 26px;
 }
+
+/* snapshot A */
+
+.list-wrap {
+    height: 0px; 
+    top: 121px;
+}
+
+.nav li a {
+    height: 200px;
+}
+
+.nav li a.current {
+    height: 121px;
+}
