@@ -1,30 +1,19 @@
 'use strict';
 
 $(function() {
+
     $('#talltabs').organicTabs({
         fadingSpeed: 100,
         sizingSpeed: 100
     });
 
     $('.list-wrap').draggable({
-			axis: 'y'
+			axis: 'y',
+			containment: [0, 106, 0, 200],
+			drag: function( event, ui ) {
+				$('li a.current').height(ui.position.top);
+			}
 		});
-
-	$('.list-wrap').bind('drag', function (event, ui) {
-				var gap = ui.position.top + 20;
-
-				if(gap < 10){
-					ui.position.top = -10;
-				}
-				
-				if(gap > 200){
-					ui.position.top = 180;
-				}
-/*
-				$('li a.current').css('padding-bottom', gap);
-*/
-			});
-
 
 });
 
