@@ -109,11 +109,13 @@ ul li:last-child a {
 .nav li a {
     display: block;
     padding: 5px;
-    background: #498EB6;
+    background-color: #498EB6;
     color: white;
     font-size: 14px;
     text-align: center;
     border: 0;
+    -webkit-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
 }
 
 li a.current, li a.current:hover {
