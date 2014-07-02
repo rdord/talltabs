@@ -3,12 +3,12 @@
 $(function() {
 	var currentTabHeight;
 
-    $('#talltabs').organicTabs({
+    $('.talltabs').organicTabs({
         fadingSpeed: 100,
         sizingSpeed: 100
     });
 
-    $('.list-wrap').draggable({
+    $('.content').draggable({
 			axis: 'y',
 			containment: [0, 106, 0, 200], /*unlocked: 200 -> 2000*/
 			drag: function( event, ui ) {
@@ -19,8 +19,8 @@ $(function() {
 		});
 		
  /* locked */
-	$('.nav li a').click(function() {
-		$('.nav li a').not(this).css('height', '16');
+	$('.menu li a').click(function() {
+		$('.menu li a').not(this).css('height', '16');
 		$(this).css('height', currentTabHeight);
 	});
 

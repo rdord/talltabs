@@ -1,10 +1,4 @@
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
+/* base */
 html {
     overflow-y: scroll;
 }
@@ -32,7 +26,7 @@ ul {
     padding: 0;
 }
 
-#page-wrap {
+.container {
     width: 440px;
     margin: 80px auto;
 }
@@ -42,7 +36,14 @@ h1 {
     margin: 0 0 20px 0;
 }
 
-/* Generic Utility */
+/* helpers */
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
 .hide {
     display: none;
 }
@@ -51,7 +52,8 @@ h1 {
     clear: both;
 }
 
-.list-wrap {
+/* content  */
+.content {
     position: absolute;
     background: #E3E4E5;
     margin: 0 0 15px 0;
@@ -59,15 +61,15 @@ h1 {
     width: 374px;
 }
 
-.list-wrap:hover{
+.content:hover{
     cursor: grab;
 }
 
-.list-wrap:active{
+.content:active{
     cursor: grabbing;
 }
 
-.list-wrap p {
+.content p {
     font-size: 14px;
     line-height: 2.2;
 }
@@ -92,21 +94,22 @@ ul li:last-child a {
     border: none;
 }
 
-.nav {
+/* menuigation */
+.menu {
     overflow: hidden;
 }
 
-.nav li {
+.menu li {
     width: 97px;
     float: left;
     margin: 0 10px 0 0;
 }
 
-.nav li.last {
+.menu li.last {
     margin-right: 0;
 }
 
-.nav li a {
+.menu li a {
     display: block;
     padding: 5px;
     background-color: #498EB6;
@@ -126,7 +129,7 @@ li a.current, li a.current:hover {
 
 }
 
-.nav li a:hover, .nav li a:focus {
+.menu li a:hover, .menu li a:focus {
     background: #C97C50;
 }
 
