@@ -36,7 +36,7 @@ h1 {
     margin: 0 0 20px 0;
 }
 
-/* helpers */
+/* warnings */
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -44,6 +44,11 @@ h1 {
     padding: 0.2em 0;
 }
 
+.no-js .js-warning {
+    display: block;
+}
+
+/* helpers */
 .hide {
     display: none;
 }
@@ -117,8 +122,8 @@ ul li:last-child a {
     font-size: 14px;
     text-align: center;
     border: 0;
-    -webkit-transition: background-color 0.5s ease;
-    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 li a.current, li a.current:hover {
