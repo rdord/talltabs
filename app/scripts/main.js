@@ -43,7 +43,10 @@ $(function() {
 	/* Settings */
 	$('.talltabs .menu li a').click(function() {
 		if ($('#lockState').prop('checked')) {
-			$('.talltabs .menu li a').not(this).css('height', '16');
+			$('.talltabs .menu li a').not(this).css('height', 16);
+			$('.talltabs .menu li a').not(this).css('border-bottom', '');
+		}	else {
+			$('.talltabs .menu li a').not(this).css('border-bottom', '1px solid #66C7FF');
 		}
 		$(this).css('height', currentTabHeight);
 	});
