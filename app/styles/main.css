@@ -1,4 +1,4 @@
-/* base */
+/* Base */
 html {
     overflow-y: scroll;
 }
@@ -26,29 +26,17 @@ ul {
     padding: 0;
 }
 
-.container {
+.talltabs {
     width: 440px;
     margin: 80px auto;
 }
 
-h1 {
-    font: bold 40px Sans-Serif;
-    margin: 0 0 20px 0;
-}
-
-/* warnings */
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-.no-js .js-warning {
+/* Alerts */
+.no-js .jshappy {
     display: block;
 }
 
-/* helpers */
+/* Helpers */
 .hide {
     display: none;
 }
@@ -57,8 +45,21 @@ h1 {
     clear: both;
 }
 
-/* content  */
-.content {
+/* Settings */
+.settings {
+    text-align: right;
+    margin: 6px 8px 0 0;
+}
+
+.settings input {
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+}
+
+
+/* Content  */
+.talltabs .content {
     position: absolute;
     background: #E3E4E5;
     margin: 0 0 15px 0;
@@ -66,55 +67,50 @@ h1 {
     width: 374px;
 }
 
-.content:hover{
+.talltabs .content:hover{
     cursor: grab;
 }
 
-.content:active{
+.talltabs .content:active{
     cursor: grabbing;
 }
 
-.content p {
+.talltabs .content p {
     font-size: 14px;
     line-height: 2.2;
 }
 
-ul {
+.talltabs .content a {
+    color: black;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.talltabs .content a:hover {
+    color: #444;
+}
+
+.heightLabel {
+    cursor: auto;
+}
+
+/* Navigation */
+.talltabs .menu {
     list-style: none;
-}
-
-ul li a {
-    display: block;
-    border-bottom: 1px solid #666;
-    padding: 4px;
-    color: #666;
-}
-
-ul li a:hover {
-    background: #444;
-    color: white;
-}
-
-ul li:last-child a {
-    border: none;
-}
-
-/* menuigation */
-.menu {
     overflow: hidden;
 }
 
-.menu li {
+.talltabs .menu li {
     width: 97px;
     float: left;
     margin: 0 10px 0 0;
 }
 
-.menu li.last {
+.talltabs .menu li.last {
     margin-right: 0;
 }
 
-.menu li a {
+.talltabs .menu li a {
     display: block;
     padding: 5px;
     background-color: #498EB6;
@@ -126,18 +122,17 @@ ul li:last-child a {
     transition: background-color 0.3s ease;
 }
 
-li a.current, li a.current:hover {
+.talltabs .menu li a:hover, .talltabs .menu li a:focus {
+    background-color: #C97C50;
+}
+
+.talltabs .menu li a.current, li a.current:hover {
     background-color: #E3E4E5 !important;
     color: #9A9998;
     font-weight: 200;
     font-size: 10px;
-
 }
 
-.menu li a:hover, .menu li a:focus {
-    background: #C97C50;
-}
-
-li a.current {
+.talltabs .menu li a.current {
     height: 26px;
 }
