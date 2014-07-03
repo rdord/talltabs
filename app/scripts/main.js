@@ -1,8 +1,7 @@
 'use strict';
 
 $(function() {
-	var currentTabHeight = 26;
-	$('li a.current').height(currentTabHeight);
+	var currentTabHeight = 47;
 
 		/* Tab menu */
     $('.talltabs').organicTabs({
@@ -20,11 +19,8 @@ $(function() {
 
 			if (currentTabHeight < 37) {
 				currentTabHeight = 37;
-			} else if (currentTabHeight > 1910) {
-				currentTabHeight = 1910;
 			}
-			
-			$('.talltabs .menu li a.current').height(currentTabHeight);
+			$('.talltabs .menu li a.current').css('height', currentTabHeight);
 			$('.talltabs .content').css('top', currentTabHeight + 90);
 			$('.heightLabel').text(currentTabHeight - 21);
 		});
