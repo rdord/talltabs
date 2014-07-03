@@ -1,7 +1,7 @@
 'use strict';
 
 $(function() {
-	var currentTabHeight = 47;
+	var currentTabHeight = 26;
 
 		/* Tab menu */
     $('.talltabs').organicTabs({
@@ -11,15 +11,18 @@ $(function() {
 
     /* Keyboard control */
     $(document).keydown(function(event) {
+			if (currentTabHeight === 26){
+				currentTabHeight = 47;
+			} else if (currentTabHeight < 38) {
+				currentTabHeight = 38;
+			}
+
 			if (event.which === 38) {
 				currentTabHeight--;
 			} else if (event.which === 40){
 				currentTabHeight++;
 			}
 
-			if (currentTabHeight < 37) {
-				currentTabHeight = 37;
-			}
 			$('.talltabs .menu li a.current').css('height', currentTabHeight);
 			$('.talltabs .content').css('top', currentTabHeight + 90);
 			$('.heightLabel').text(currentTabHeight - 21);
@@ -32,7 +35,7 @@ $(function() {
 			cancel: '.heightLabel',
 			drag: function( event, ui ) {
 				currentTabHeight = ui.position.top - 90;
-				$('.talltabs .menu li a.current').height(currentTabHeight);
+				$('.talltabs .menu li a.current').css('height', currentTabHeight);
 				$('.heightLabel').text(currentTabHeight - 21);
 			}
 		});
