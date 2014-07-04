@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font: 12px 'Helvetica Neue', Helvetica, rial, sans-serif;
+    font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -45,53 +45,19 @@ ul {
     clear: both;
 }
 
-/* Settings */
-.settings {
-    text-align: right;
-    margin: 6px 8px 0 0;
-}
-
-.settings input {
-    vertical-align: middle;
-    position: relative;
-    bottom: 2px;
-}
-
+/*** Talltabs ***/
 
 /* Content  */
 .talltabs .content {
-    position: absolute;
     background: #E3E4E5;
     margin: 0 0 15px 0;
     padding: 16px 18px 18px 26px;
     width: 374px;
 }
 
-.talltabs .content:hover{
-    cursor: grab;
-}
-
-.talltabs .content:active{
-    cursor: grabbing;
-}
-
 .talltabs .content p {
     font-size: 14px;
     line-height: 2.2;
-}
-
-.talltabs .content a {
-    color: black;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-}
-
-.talltabs .content a:hover {
-    color: #444;
-}
-
-.heightLabel {
-    cursor: auto;
 }
 
 /* Navigation */

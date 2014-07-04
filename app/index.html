@@ -8,8 +8,6 @@
         <title>talltabs</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
@@ -26,11 +24,6 @@
 
         <p class="jshappy hide">This page needs JavaScript in your browser to be enabled.</p>
 
-        <div class="settings">
-            <input id="lockState" type="checkbox" checked="checked">
-            <label for="lockState">Locked</label>
-        </div>
-
         <div class="talltabs">
             <ul class="menu">
                 <li><a href="#play" class="current">Play</a></li>
@@ -42,19 +35,16 @@
             <div class="content">
             
                 <div id="play">
-                    <p>Use up and down arrow keys on your keyboard or drag the content area with the mouse to change the gap between the content and the tabs.</p>
-                    <p>Unlock to make the tabs retain their height.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio excepturi maiores quas culpa, sunt quam! Saepe necessitatibus atque officiis dicta deserunt dignissimos error quo doloremque nisi. Iste libero harum iure!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, officiis!</p>
                 </div>
                  
                  <div id="make" class="hide">
-                    <p><a href="https://github.com/rdorde/talltabs-static/archive/master.zip" title="Download static version">https://github.com/rdorde/talltabs-static/archive/master.zip</a></p>
-                    <pre>.talltabs .menu li a.current { 
-    height: <span class="heightLabel">26</span>px; 
-}</pre>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, unde, harum doloribus quisquam necessitatibus aperiam iste libero doloremque magnam ad?</p>
                  </div>
                  
                  <div id="about" class="hide">
-                    <p>Prototyping tool for tall tabs.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
                  </div>
                  
                  <div id="empty" class="hide"></div>
@@ -68,16 +58,17 @@
         <script src="scripts/modernizr.custom.74216.js"></script>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/jquery.organicTabs/src/jquery.organicTabs.js"></script>
-        <script src="bower_components/jquery-ui/ui/minified/jquery.ui.core.min.js"></script>
-        <script src="bower_components/jquery-ui/ui/minified/jquery.ui.widget.min.js"></script>
-        <script src="bower_components/jquery-ui/ui/minified/jquery.ui.mouse.min.js"></script>
-        <script src="bower_components/jquery-ui/ui/minified/jquery.ui.position.min.js"></script>
-        <script src="bower_components/jquery-ui/ui/minified/jquery.ui.draggable.min.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+        <script>
+            $(function() {
+                $('.talltabs').organicTabs({
+                    fadingSpeed: 100,
+                    sizingSpeed: 100
+                });
+            });
+        </script>
+        
 </body>
 </html>
