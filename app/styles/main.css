@@ -106,7 +106,7 @@ ul {
     margin: 0 10px 0 0;
 }
 
-.talltabs .menu li.last {
+.talltabs .menu li:last-child {
     margin-right: 0;
 }
 
@@ -135,4 +135,30 @@ ul {
 
 .talltabs .menu li a.current {
     height: 26px;
+}
+
+@media (max-width: 456px){
+    .talltabs {
+        width: 100%;
+    }
+
+    .talltabs .content {
+        width: 89%;
+    }
+}
+
+@media (max-width: 433px){
+    .talltabs .menu li:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 330px){
+    .talltabs .menu li:nth-child(3) {
+        display: none;
+    }
+
+    .talltabs .content {
+        width: 85%;
+    }
 }
